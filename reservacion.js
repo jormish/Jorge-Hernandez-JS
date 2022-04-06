@@ -8,3 +8,18 @@ for(let cuarto = 1; cuarto <= cuartos; cuarto++) {
 
 }
 
+
+alert('Calculando el precio de Tacos, Pizza con soda.... ' )
+
+let result = 0 
+function sumar(c1,c2){
+    result = c1 + c2
+
+}
+
+
+sumar (5,10)
+
+console.log('el precio total es ' + result)
+alert('el precio total es ' + result)
+

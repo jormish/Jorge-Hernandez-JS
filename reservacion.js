@@ -1,25 +1,33 @@
 
+alert('Gana Desayuno gratis por cada pregunta correcta')
+let score = 0;
 
-const  cuartos = 3
+let pregunta = [
+    {
+        prompt: "Cual es la Capital de E.U:U? \n(a) Washington DC\n\(b) New York\n(c) Los Angeles",
+        answer: "a"
+    },
+    {
+        prompt: "Cual es la Capital de E.U:U? \n(a) Washington DC\n\(b) New York\n(c) Los Angeles",
+        answer: "a"
+    },
+    {
+        prompt: "Cual es la Capital de E.U:U? \n(a) Washington DC\n\(b) New York\n(c) Los Angeles",
+        answer: "a"
+    },
 
-for(let cuarto = 1; cuarto <= cuartos; cuarto++) {
-    let nombre = prompt ('ingrese nombre')
-    alert('Numero de cuarto ' + cuarto + ' para ' + nombre)
+]
 
-}
+for (let i=0; i < pregunta.length; i++) {
+    let respuesta = prompt(pregunta[i].prompt);
+    if (respuesta ==  pregunta [i].answer){
+        score++;
+        alert("Felicidades!! Ganaste Desayuno Gratis!!")
+    }else {
+            alert("Incorecto")
+        }
 
+    }
 
-alert('Calculando el precio de Tacos, Pizza con soda.... ' )
-
-let result = 0 
-function sumar(c1,c2){
-    result = c1 + c2
-
-}
-
-
-sumar (5,10)
-
-console.log('el precio total es ' + result)
-alert('el precio total es ' + result)
-
+alert("Agaraste " + score + "/" + pregunta.length);
+alert("Ganaste " + score  + " Desayunos");
